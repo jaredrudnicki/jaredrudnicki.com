@@ -57,10 +57,10 @@ const Home = () => {
             <div className="container-body">
                 <h1 className="header-name">Jared Rudnicki</h1>
                 <div className="row header-nav">
-                    <div className="col"><a href="#about"><h2>About</h2></a></div>
-                    <div className="col"><a href="#projects"><h2>Projects</h2></a></div>
-                    <div className="col"><a href="#fun"><h2>Fun</h2></a></div>
-                    <div className="col"><a href="#contact"><h2>Contact</h2></a></div>
+                    <div className="col-3"><a href="#about">About</a></div>
+                    <div className="col-4"><a href="#projects">Projects</a></div>
+                    <div className="col-2"><a href="#fun">Fun</a></div>
+                    <div className="col-3"><a href="#contact">Contact</a></div>
                 </div>
             </div>
         </div>

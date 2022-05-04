@@ -56,13 +56,17 @@
 
 .header-name {
     font-family: 'JetBrains Mono';
+    overflow: hidden;
+    margin-right: 10%;
     font-size: 10vw;
     position: absolute;
-    top: 150px;
+    top: 50px;
 }
+
 
 .header-nav {
     margin: auto;
+    font-size: 3vw;
     position: absolute;
     bottom: 0;
 }
