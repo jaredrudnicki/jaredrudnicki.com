@@ -5,6 +5,12 @@ import image1 from "../../images/profile1.jpg"
 import image_profile_2 from "../../images/profile2.jpg"
 import image_jrivia from "../../images/jrivia.PNG"
 import image_gift_picker from "../../images/giftpicker.PNG"
+import gallery1 from "../../images/4_0157.png"
+import gallery2 from "../../images/emerald_deck.png"
+import gallery3 from "../../images/CKlogo-white-03.png"
+import gallery4 from "../../images/jr_logo.png"
+import gallery5 from "../../images/BJoker_Mockup.jpg"
+import gallery6 from "../../images/squiggles.png"
 
 function NavBar() {
     return (
@@ -12,9 +18,11 @@ function NavBar() {
             <div className="nav-bar row justify-content-between">
                 <div className="col-5">Jared Rudnicki</div>
                 <div className="col-7 justify-right">
-                    <button style={{float: "right"}}><a href="#about">about</a></button> 
-                    <button style={{float: "right"}}><a href="#projects">projects</a></button>
                     <button style={{float: "right"}}><a href="#contact">contact</a></button>
+                    <button style={{float: "right"}}><a href="#gallery">gallery</a></button>
+                    <button style={{float: "right"}}><a href="#projects">projects</a></button>
+                    <button style={{float: "right"}}><a href="#about">about</a></button> 
+                    
                 </div>
                 
             </div>
@@ -93,12 +101,12 @@ const Home = () => {
                     </div>
                 </div>
                 
-
-
-
                 <p style={{marginTop: "20px"}}>{`If you would like to reach out for any reason, if you want to chat or possibly 
                 offer me an interview, you can`} <a href="resume"> checkout my resume </a> or <a href="#contact">contact me.</a></p>
             </div> 
+
+
+
             <div id="projects">
                 <h1>Projects</h1>
                 
@@ -162,8 +170,66 @@ const Home = () => {
                 </div>
             </div> 
 
+
+
             <div>
-                <h5>Fun</h5>
+                <h1>Gallery</h1>
+                <div className="row">
+                    <div className="col-4 gallery-item">
+                        <img src={gallery1} alt="gallery1" />
+                        <a href={gallery1} target="_blank" style={{ color: "white"}} rel="noreferrer">
+                            <div className="caption">
+                                <p style={{width: "20vw"}}>A render of the back of the "Molinos" deck</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div className="col-4 gallery-item">
+                        <img src={gallery2} alt="gallery1" />
+                        <a href={gallery2} target="_blank" style={{ color: "white"}} rel="noreferrer">
+                            <div className="caption">
+                                <p style={{width: "20vw"}}>Emerald and jungle themed deck concept</p>
+                            </div>
+                        </a> 
+                    </div>
+                    <div className="col-4 gallery-item">
+                        <img src={gallery3} alt="gallery1" />
+                        <a href={gallery3} target="_blank" style={{ color: "white"}} rel="noreferrer">
+                            <div className="caption">
+                                <p style={{width: "20vw"}}>Logo design for my brother's homemade beer</p>
+                            </div> 
+                        </a>
+                        
+                    </div>
+                </div>
+
+                <div className="row">
+                    <div className="col-4 gallery-item">
+                        <img src={gallery4} alt="gallery1" />
+                        <a href={gallery4} target="_blank" style={{ color: "white"}} rel="noreferrer">
+                            <div className="caption">
+                                <p style={{width: "20vw"}}>Logo design concept based around my initials</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div className="col-4 gallery-item">
+                        <img src={gallery5} alt="gallery1" />
+                        <a href={gallery5} target="_blank" style={{ color: "white"}} rel="noreferrer">
+                            <div className="caption">
+                                <p style={{width: "20vw"}}>Mockup made for "Molinos" deck, higlighting the joker and back design</p>
+                            </div>
+                        </a> 
+                    </div>
+                    <div className="col-4 gallery-item">
+                        <img src={gallery6} alt="gallery1" />
+                        <a href={gallery6} target="_blank" style={{ color: "white"}} rel="noreferrer">
+                            <div className="caption">
+                                <p style={{width: "20vw"}}>Pattern used as my LinkedIn profile backdrop</p>
+                            </div> 
+                        </a>
+                        
+                    </div>
+                </div>
+                
                 <ul>
                     <li>Playing Cards / Design Stuff</li>
                 </ul>
