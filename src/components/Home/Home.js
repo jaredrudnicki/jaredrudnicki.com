@@ -16,8 +16,8 @@ function NavBar() {
     return (
         <div className="container" style={{border : "1px solid green"}}>
             <div className="nav-bar row justify-content-between">
-                <div className="col-5">Jared Rudnicki</div>
-                <div className="col-7 justify-right">
+                <div className="col-3">Jared Rudnicki</div>
+                <div className="col-9 justify-right">
                     <button style={{float: "right"}}><a href="#contact">contact</a></button>
                     <button style={{float: "right"}}><a href="#gallery">gallery</a></button>
                     <button style={{float: "right"}}><a href="#projects">projects</a></button>
@@ -113,7 +113,7 @@ const Home = () => {
                 <div className="jrivia row">
                     
                     <a href="http://jrivia.herokuapp.com/" className="jrivia-title col" style={{backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.25)), url(${image_jrivia})`}}>
-                    <div style={{display:"flex"}}><i class="fas fa-link" style={{padding:"20px"}}></i><h2>Jrivia</h2></div>
+                    <div style={{display:"flex"}}><i class="fas fa-link" style={{padding:"20px"}}></i><h2><pre>Jrivia      </pre> </h2></div>
                     </a>
                     
                     <div className="jrivia-description col">
@@ -133,7 +133,7 @@ const Home = () => {
                 <div className="jrivia row">
                     
                     <a href="https://giftpicker.io/" className="jrivia-title col" style={{backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.25)), url(${image_gift_picker})`}}>
-                        <div style={{display:"flex"}}><i class="fas fa-link" style={{padding:"20px"}}></i><h2>Gift Picker </h2></div>
+                        <div style={{display:"flex"}}><i class="fas fa-link" style={{padding:"20px"}}></i><h2><pre>Gift Picker </pre></h2></div>
                     </a>
                     
                     <div className="jrivia-description col">
@@ -154,7 +154,7 @@ const Home = () => {
                 
                 <div className="jrivia row">
                     <Link to="/figma-designs" className="jrivia-title col" style={{backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.25)), url(${image1})`}}>
-                        <div style={{display:"flex"}}><i class="fas fa-link" style={{padding:"20px"}}></i><h2>This Website</h2></div>
+                        <div style={{display:"flex"}}><i class="fas fa-link" style={{padding:"20px"}}></i><h2><pre>This Website</pre></h2></div>
                     </Link>
                     <div className="jrivia-description col">
                         <h5>Tools: HTML/CSS, Javascript (React), Figma</h5>
@@ -172,7 +172,7 @@ const Home = () => {
 
 
 
-            <div>
+            <div id="gallery">
                 <h1>Gallery</h1>
                 <div className="row">
                     <div className="col-4 gallery-item">
@@ -229,28 +229,26 @@ const Home = () => {
                         
                     </div>
                 </div>
-                
-                <ul>
-                    <li>Playing Cards / Design Stuff</li>
-                </ul>
             </div> 
 
+
             
-            <h3>Contact Me</h3>
-            <p>
-                If you want to ask me any questions, if you need a friend, if you want to talk business, or if you want to offer me an interview (that would be epic) ...
-            </p>
             <div className="contact" id="contact">
-                
-                <label for="contact-name">name</label>
-                <input id="contact-name" type="text" value={contactName} onChange={(e) => setContactName(e.target.value)}></input> <br/>
-                <label for="contact-email">email</label>
-                <input id="contact-email" type="text" value={contactEmail} onChange={(e) => setContactEmail(e.target.value)}></input> <br />
-                
-                <label for="contact-message">message</label>
-                <textarea id="contact-message" value={contactMessage} onChange={(e) => setContactMessage(e.target.value)} rows="8">
-                </textarea> <br />
-                <button>Send</button>
+                <h3>Contact Me</h3>
+                <p>
+                    If you want to reach out to me for any reason, if you have a project you are working on or if you just want to talk, send me an email by filling out the form.
+                </p>
+                <form onSubmit={e => {window.open(`mailto:jared.a.rudnicki@gmail.com?subject=Message From ${contactName}&body=${contactMessage}`); e.preventDefault();}}>
+                    <label for="contact-name">name</label>
+                    <input id="contact-name" type="text" required value={contactName} onChange={(e) => setContactName(e.target.value)}></input> <br/>
+                    <label for="contact-email">email</label>
+                    <input id="contact-email" type="email" required value={contactEmail} onChange={(e) => setContactEmail(e.target.value)}></input> <br />
+                    
+                    <label for="contact-message">message</label>
+                    <textarea id="contact-message" required value={contactMessage} onChange={(e) => setContactMessage(e.target.value)} rows="8" placeholder="Hello Jared,&#10;I am John Doe and I would love to schedule some time to talk to you.&#10;Best,&#10;John">
+                    </textarea> <br />
+                    <button>Send <i class="fas fa-paper-plane"></i></button>
+                </form>
             </div> 
         </div>
         </div>
