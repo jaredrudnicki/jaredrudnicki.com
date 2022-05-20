@@ -1,6 +1,9 @@
-import "./Home.css"
+import "./Home.css";
 import {useState, useEffect} from 'react';
 import {Link} from "react-router-dom";
+import Navbar from "@acto/react-navbar";
+
+
 import image1 from "../../images/profile1.jpg"
 import image_profile_2 from "../../images/profile2.jpg"
 import image_jrivia from "../../images/jrivia.PNG"
@@ -12,7 +15,7 @@ import gallery4 from "../../images/jr_logo.png"
 import gallery5 from "../../images/BJoker_Mockup.jpg"
 import gallery6 from "../../images/squiggles.png"
 
-function NavBar() {
+function XNavBar() {
     return (
         <div className="container" style={{border : "1px solid green"}}>
             <div className="nav-bar row justify-content-between">
@@ -29,6 +32,60 @@ function NavBar() {
         </div>
     )
 }
+function SmallNavBar() {
+    const props = {
+        float: true,
+        items: [
+          {
+            text: 'About',
+            link: '#about'
+          },
+          {
+            text: 'Projects',
+            link: '#projects'
+          },
+          {
+            text: 'Gallery',
+            link: '#gallery'
+          },
+          {
+            text: 'Contact',
+            link: '#contact'
+          }
+        ],
+        logo: {
+          text: 'Jared Rudnicki',
+          link: '#header'
+        },
+        style: {
+          barStyles: {
+            fontFamily: 'JetBrains Mono',
+            fontSize: '14px',
+            color: 'white',
+            position: 'fixed',
+            left: '0',
+            right: '0',
+            padding: '10px',
+            
+            backgroundColor: '#222C33',
+            zIndex: '2',
+            boxShadow: 'none'
+          },
+          sidebarStyles: {
+            backgroundColor: '#222C33',
+            buttonColor: 'white',
+            border: 'none',
+          }
+        }
+      }
+    return (
+        <div>
+            <Navbar {...props} />
+        </div>
+        
+    )
+}
+
 
 
 const Home = () => {
@@ -37,6 +94,13 @@ const Home = () => {
     const [contactName, setContactName] = useState('');
     const [contactEmail, setContactEmail] = useState('');
     const [contactMessage, setContactMessage] = useState('');
+
+    const menuTheme = {
+        backgroundColor: '#222C33',
+        mainColor: 'white',
+        menuBgColor: '#222C33',
+      }
+
 
     const listenToScroll = () => {
         let heightToHideFrom = 500;
@@ -59,16 +123,32 @@ const Home = () => {
     return (
         <div className="all">
         <div className="container">
-            {navVisible && <NavBar />}
+            {navVisible && 
+            <Navbar
+                className="nav-bar" // style .navbar in your css
+                menuClassName="navbar--menu" // style .navbar--menu in your css
+                brand={<a href="#header">Jared Rudnicki</a>}
+                theme={menuTheme}
+                rightLinks={(<>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#contact">Contact</a>
+                </>)}
+                shouldHideOnScroll={false}
+            />}
         </div>
         <div className="header" id="header">
             <div className="container-body">
-                <h1 className="header-name">Jared Rudnicki</h1>
+                <div className="header-name">
+                    <h1 className="firstname">Jared</h1>
+                    <h1 className="lastname">Rudnicki</h1>
+                </div> 
                 <div className="row header-nav">
-                    <div className="col-3"><a href="#about">About</a></div>
-                    <div className="col-4"><a href="#projects">Projects</a></div>
-                    <div className="col-2"><a href="#fun">Fun</a></div>
-                    <div className="col-3"><a href="#contact">Contact</a></div>
+                    <div className="col"><a href="#about">About</a></div>
+                    <div className="col"><a href="#projects">Projects</a></div>
+                    <div className="col"><a href="#gallery">Gallery</a></div>
+                    <div className="col"><a href="#contact">Contact</a></div>
                 </div>
             </div>
         </div>
@@ -143,7 +223,7 @@ const Home = () => {
                         My role as a developer resulted in the creation of a matching algorithm that generated an ordered 
                         list of gifts determined by weighted features that is best suited for the identified individual.
                         I also contributed to the logic that handled moving throught the questions, and the logic for 
-                        showing the results. Other contributions ionclude small features and design changes.
+                        showing the results. Other contributions include small features and design changes.
                         `}</p>
                         
                         <a href="https://github.com/getpresently/gift-picker"><i class="fab fa-github"></i> github</a>
@@ -250,8 +330,23 @@ const Home = () => {
                     <button>Send <i class="fas fa-paper-plane"></i></button>
                 </form>
             </div> 
+            
         </div>
-        </div>
+        
+        <div className="footer-background">
+            <div className="footer">
+                    <a href="https://github.com/jaredrudnicki/jaredrudnicki.com">
+                        <h6><i class="fas fa-code-branch"></i> Built and Designed by Jared Rudnicki</h6>
+                    </a>
+                    <a href="https://github.com/jaredrudnicki">
+                        <p><i class="fab fa-github"></i> jaredrudnicki</p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jared-rudnicki/">
+                        <p><i class="fab fa-linkedin"></i> jared-rudnicki</p>
+                    </a>
+            </div>
+        </div> 
+    </div>
     )
 }
 

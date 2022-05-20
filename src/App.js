@@ -1,6 +1,5 @@
 import React from 'react';
 import { useState } from 'react';
-import './App.css';
 import { BrowserRouter, Routes, Route, Link, useParams } from 'react-router-dom'
 import Home from "./components/Home/Home"
 import FigmaDesigns from "./components/FigmaDesigns"
@@ -18,9 +17,7 @@ function App() {
       
 
       <div className="App">
-        <Link to="/home">
-          <button>HOME</button>
-        </Link>
+        <Home />
       </div>
     </BrowserRouter>
   );
