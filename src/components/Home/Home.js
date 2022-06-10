@@ -11,7 +11,7 @@ import image_gift_picker from "../../images/giftpicker.PNG"
 import gallery1 from "../../images/4_0157.png"
 import gallery2 from "../../images/emerald_deck.png"
 import gallery3 from "../../images/CKlogo-white-03.png"
-import gallery4 from "../../images/jr_logo.png"
+import gallery4 from "../../images/GreenifyInfographic.png"
 import gallery5 from "../../images/BJoker_Mockup.jpg"
 import gallery6 from "../../images/squiggles.png"
 
@@ -287,7 +287,7 @@ const Home = () => {
                         <img src={gallery4} alt="gallery1" />
                         <a href={gallery4} target="_blank" style={{ color: "white"}} rel="noreferrer">
                             <div className="caption">
-                                <p style={{width: "20vw"}}>Logo design concept based around my initials</p>
+                                <p style={{width: "20vw"}}>Made a clearer version of an inforgraphic in a scholarly paper</p>
                             </div>
                         </a>
                     </div>
