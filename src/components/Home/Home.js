@@ -67,15 +67,15 @@ const Home = () => {
         </div>
         <div className="header" id="header">
             <div className="container-body">
-                <div className="header-name">
+                <div className="row header-name">
                     <h1 className="firstname">Jared</h1>
                     <h1 className="lastname">Rudnicki</h1>
-                </div> 
+                </div>
                 <div className="row header-nav">
-                    <div className="col"><a href="#about">About</a></div>
-                    <div className="col"><a href="#projects">Projects</a></div>
-                    <div className="col"><a href="#gallery">Gallery</a></div>
-                    <div className="col"><a href="#contact">Contact</a></div>
+                    <div className="col-3"><a href="#about">About</a></div>
+                    <div className="col-3"><a href="#projects">Projects</a></div>
+                    <div className="col-3"><a href="#gallery">Gallery</a></div>
+                    <div className="col-3"><a href="#contact">Contact</a></div>
                 </div>
             </div>
         </div>

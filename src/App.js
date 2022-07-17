@@ -1,6 +1,5 @@
 import React from 'react';
-import { useState } from 'react';
-import { BrowserRouter, Routes, Route, Link, useParams } from 'react-router-dom'
+import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import Home from "./components/Home/Home"
 import FigmaDesigns from "./components/FigmaDesigns"
 
