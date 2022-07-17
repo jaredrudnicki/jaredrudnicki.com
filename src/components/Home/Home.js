@@ -6,8 +6,8 @@ import Navbar from "@acto/react-navbar";
 
 import image1 from "../../images/profile1.jpg"
 import image_profile_2 from "../../images/profile2.jpg"
-import image_jrivia from "../../images/jrivia.PNG"
-import image_gift_picker from "../../images/giftpicker.PNG"
+import image_jrivia from "../../images/jrivia.png"
+import image_gift_picker from "../../images/giftpicker.png"
 import gallery1 from "../../images/4_0157.png"
 import gallery2 from "../../images/emerald_deck.png"
 import gallery3 from "../../images/CKlogo-white-03.png"
