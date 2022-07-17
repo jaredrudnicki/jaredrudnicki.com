@@ -11,14 +11,9 @@ function App() {
   return (
     <BrowserRouter>
     <Routes>
-      <Route path="/home" element={<Home />} />
+      <Route exact path="/" element={<Home />} />
       <Route path="/figma-designs" element={<FigmaDesigns />} />
     </Routes>
-      
-
-      <div className="App">
-        <Home />
-      </div>
     </BrowserRouter>
   );
 }
