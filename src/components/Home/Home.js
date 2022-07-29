@@ -172,7 +172,7 @@ const Home = () => {
                         will take you to the Figma designs. 
                         `}</p>
 
-                        <a href="github.com"><i class="fab fa-github"></i> github</a>
+                        <a href="https://github.com/jaredrudnicki/jaredrudnicki.com"><i class="fab fa-github"></i> github</a>
                     </div> 
                 </div>
             </div> 
