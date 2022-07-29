@@ -92,7 +92,7 @@ const Home = () => {
                 Some languages and tools I love include Javascript (with React), HTML/CSS, Python, SQL, 
                 Figma, Postman.`}</p>
                 
-                <div className="row">
+                <div className="row profile-card">
                     <div className="col-lg-4 col-12" style={{marginTop: "20px"}}>
                         <img src={image_profile_2} style={{verticalAlign: "middle", width: "200px", height: "200px", borderRadius: "50%", objectFit: "cover", display: "block", margin: "auto"}}/>
                     </div>
