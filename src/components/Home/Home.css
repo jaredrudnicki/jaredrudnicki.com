@@ -24,6 +24,20 @@
     animation: fadeOut;
 }
 
+@media only screen and (max-width: 600px) {
+    .header {
+        background-image: url("../../images/profile1.jpg");
+        width: 100%;
+        height: 550px;
+        background-attachment: scroll;
+        background-position-y: 15%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        animation: fadeOut;
+    }
+}
+
 .header .firstname {
     font-family: 'JetBrains Mono';
     font-size: 9vw;
