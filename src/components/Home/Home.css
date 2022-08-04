@@ -207,7 +207,7 @@ input:focus, textarea:focus {
     display: block;
     object-fit: cover;
     width: 100%;
-    height: 20vw;
+    height: 40vh;
     border-radius: 10px;
 }
 

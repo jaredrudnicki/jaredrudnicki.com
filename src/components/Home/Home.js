@@ -182,7 +182,7 @@ const Home = () => {
             <div id="gallery">
                 <h1>Gallery</h1>
                 <div className="row">
-                    <div className="col-4 gallery-item">
+                    <div className="col-lg-4  gallery-item">
                         <img src={gallery1} alt="gallery1" />
                         <a href={gallery1} target="_blank" style={{ color: "white"}} rel="noreferrer">
                             <div className="caption">
@@ -190,7 +190,7 @@ const Home = () => {
                             </div>
                         </a>
                     </div>
-                    <div className="col-4 gallery-item">
+                    <div className="col-lg-4  gallery-item">
                         <img src={gallery2} alt="gallery1" />
                         <a href={gallery2} target="_blank" style={{ color: "white"}} rel="noreferrer">
                             <div className="caption">
@@ -198,7 +198,7 @@ const Home = () => {
                             </div>
                         </a> 
                     </div>
-                    <div className="col-4 gallery-item">
+                    <div className="col-lg-4  gallery-item">
                         <img src={gallery3} alt="gallery1" />
                         <a href={gallery3} target="_blank" style={{ color: "white"}} rel="noreferrer">
                             <div className="caption">
@@ -210,7 +210,7 @@ const Home = () => {
                 </div>
 
                 <div className="row">
-                    <div className="col-4 gallery-item">
+                    <div className="col-lg-4  gallery-item">
                         <img src={gallery4} alt="gallery1" />
                         <a href={gallery4} target="_blank" style={{ color: "white"}} rel="noreferrer">
                             <div className="caption">
@@ -218,7 +218,7 @@ const Home = () => {
                             </div>
                         </a>
                     </div>
-                    <div className="col-4 gallery-item">
+                    <div className="col-lg-4  gallery-item">
                         <img src={gallery5} alt="gallery1" />
                         <a href={gallery5} target="_blank" style={{ color: "white"}} rel="noreferrer">
                             <div className="caption">
@@ -226,7 +226,7 @@ const Home = () => {
                             </div>
                         </a> 
                     </div>
-                    <div className="col-4 gallery-item">
+                    <div className="col-lg-4  gallery-item">
                         <img src={gallery6} alt="gallery1" />
                         <a href={gallery6} target="_blank" style={{ color: "white"}} rel="noreferrer">
                             <div className="caption">
