@@ -84,7 +84,6 @@
     top: 50px;
 }
 
-
 .header-nav {
     font-size: 3vw;
     position: absolute;
@@ -106,7 +105,23 @@
 }
 
 .navbar-container {
-    border: 1px solid blue;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.navbar-container .navbar {
+    padding: 10px;
+    background-color: #222C33;
+    color: white;
+}
+nav button {
+    color: white;
+}
+
+.navbar-container a {
+    text-decoration: none;
+    color: white;
 }
 
 #about {
