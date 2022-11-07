@@ -1,3 +1,4 @@
+import React from "react";
 import "./Home.css";
 import {useState, useEffect} from 'react';
 import {Link} from "react-router-dom";
@@ -51,19 +52,23 @@ const Home = () => {
         <div className="all">
         <div className="container">
             {navVisible && 
-            <Navbar
-                className="nav-bar" // style .navbar in your css
-                menuClassName="navbar--menu" // style .navbar--menu in your css
-                brand={<a href="#header">Jared Rudnicki</a>}
-                theme={menuTheme}
-                rightLinks={(<>
-                    <a href="#about">About</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#gallery">Gallery</a>
-                    <a href="#contact">Contact</a>
-                </>)}
-                shouldHideOnScroll={false}
-            />}
+            <div className="navbar-container">
+                <Navbar
+                    className="nav-bar" // style .navbar in your css
+                    menuClassName="navbar--menu" // style .navbar--menu in your css
+                    brand={<a href="#header">Jared Rudnicki</a>}
+                    theme={menuTheme}
+                    rightLinks={(<>
+                        <a href="#about">About</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#gallery">Gallery</a>
+                        <a href="#contact">Contact</a>
+                    </>)}
+                    shouldHideOnScroll={false}
+                />
+            </div>
+            }
+            
         </div>
         <div className="header" id="header">
             <div className="container-body">
@@ -97,14 +102,16 @@ const Home = () => {
                         <img src={image_profile_2} style={{verticalAlign: "middle", width: "200px", height: "200px", borderRadius: "50%", objectFit: "cover", display: "block", margin: "auto"}}/>
                     </div>
                     <div className="col-lg-8 col-12" style={{marginTop: "20px"}}>
-                        <h6>Place I call home</h6>
-                        <p>Atlanta, GA</p>
+                        <ul>
+                            <li><h6>Place I call home:</h6> Atlanta, GA</li> <br />
+                            <li><h6>Tools I love:</h6> Javascript (with React), HTML/CSS, Python, SQL, Figma, Postman, Illustrator</li> <br />
+                            <li><h6>Tools I am learning:</h6> Flutter</li> <br />
+                            <li><h6>My Hobbies:</h6> Squash, Running, Reading, Cooking</li> <br />
+                        </ul>
 
-                        <h6>Tools I love</h6>
-                        <p>Javascript (with React), HTML/CSS, Python, SQL, Figma, Postman, Illustrator</p>
+                        
 
-                        <h6>Tools I am learning</h6>
-                        <p>Flutter</p>
+                        
                     </div>
                 </div>
                 
