@@ -122,7 +122,7 @@ const Home = () => {
                 </div>
                 
                 <p style={{marginTop: "20px"}}>{`If you would like to reach out for any reason, if you want to chat or possibly 
-                offer me an interview, you can`} <a href="resume"> checkout my resume </a> or <a href="#contact">contact me.</a></p>
+                offer me an interview, you can`} <a href="https://drive.google.com/file/d/1Z9GTBkdk_NcEuwKT5_kRnDDUoDl3pfNw/view?usp=sharing"> checkout my resume </a> or <a href="#contact">contact me.</a></p>
             </div> 
 
 
