@@ -156,6 +156,10 @@ nav button {
     border-radius: 20px 0px 20px 0px;
 }
 
+.profile-photo {
+    padding: 10px;
+}
+
 #projects h1 {
     font-family: 'JetBrains Mono';
 }
@@ -219,6 +223,22 @@ nav button {
     padding-left: 10px;
     padding-right: 10px;
     resize: none;
+}
+
+.contact-button {
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #222C33;
+    color: white;
+    padding:5px 20px 5px 20px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .contact p {
+        font-size: 12px;
+    }
 }
 
 input:focus, textarea:focus {

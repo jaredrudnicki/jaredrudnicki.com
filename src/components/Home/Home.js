@@ -105,7 +105,7 @@ const Home = () => {
                 
                 <div className="row profile-card">
                     <div className="col-lg-4 col-12" style={{marginTop: "20px"}}>
-                        <img src={image_profile_2} style={{verticalAlign: "middle", width: "200px", height: "200px", borderRadius: "50%", objectFit: "cover", display: "block", margin: "auto"}}/>
+                        <img className="profile-photo" src={image_profile_2} style={{verticalAlign: "middle", width: "200px", height: "200px", borderRadius: "50%", objectFit: "cover", display: "block", margin: "auto"}}/>
                     </div>
                     <div className="col-lg-8 col-12" style={{marginTop: "20px"}}>
                         <ul>
@@ -265,9 +265,9 @@ const Home = () => {
                     <input id="contact-email" type="email" required value={contactEmail} onChange={(e) => setContactEmail(e.target.value)}></input> <br />
                     
                     <label for="contact-message">message</label>
-                    <textarea id="contact-message" required value={contactMessage} onChange={(e) => setContactMessage(e.target.value)} rows="8" placeholder="Hello Jared,&#10;I am John Doe and I would love to schedule some time to talk to you.&#10;Best,&#10;John">
+                    <textarea id="contact-message" required value={contactMessage} onChange={(e) => setContactMessage(e.target.value)} rows="8">
                     </textarea> <br />
-                    <button>Send <i class="fas fa-paper-plane"></i></button>
+                    <button className="contact-button">Send <i class="fas fa-paper-plane"></i></button>
                 </form>
             </div> 
             
