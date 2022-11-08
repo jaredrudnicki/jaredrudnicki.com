@@ -84,29 +84,40 @@
     top: 50px;
 }
 
-
 .header-nav {
-    font-size: 3vw;
+    display: inline;
     position: absolute;
-    bottom: 0;
-    left: 0px;
-    right: 0px;
-    margin-left: 15%;
-    margin-right: 15%;
-}
-
-.header-nav .col-3 {
-    text-align: center;
+    bottom: 5%;
 }
 
 .header-nav a {
     font-family: 'JetBrains Mono';
     color: white;
-    text-decoration: none;
 }
 
 .navbar-container {
-    border: 1px solid blue;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.navbar-container .navbar {
+    padding: 10px;
+    background-color: #222C33;
+    color: white;
+}
+
+nav {
+    font-family: 'JetBrains Mono';
+}
+
+nav button {
+    color: white;
+}
+
+.navbar-container a {
+    text-decoration: none;
+    color: white;
 }
 
 #about {
