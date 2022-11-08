@@ -2,6 +2,8 @@ import React from "react";
 import "./Home.css";
 import {useState, useEffect} from 'react';
 import {Link} from "react-router-dom";
+import Navbar from "@acto/react-navbar";
+
 
 import image1 from "../../images/profile1.jpg"
 import image_profile_2 from "../../images/profile2.jpg"
@@ -16,11 +18,16 @@ import gallery6 from "../../images/squiggles.png"
 
 const Home = () => {
     const [navVisible, setNavVisible] = useState(false);
-    const [toggle, setToggle] = useState(false);
 
     const [contactName, setContactName] = useState('');
     const [contactEmail, setContactEmail] = useState('');
     const [contactMessage, setContactMessage] = useState('');
+
+    const menuTheme = {
+        backgroundColor: '#222C33',
+        mainColor: 'white',
+        menuBgColor: '#222C33',
+      }
 
 
     const listenToScroll = () => {
@@ -43,52 +50,41 @@ const Home = () => {
 
     return (
         <div className="all">
-    
+        <div className="container">
+            {navVisible && 
+            <div className="navbar-container">
+                <Navbar
+                    className="nav-bar" // style .navbar in your css
+                    menuClassName="navbar--menu" // style .navbar--menu in your css
+                    brand={<a href="#header">Jared Rudnicki</a>}
+                    theme={menuTheme}
+                    rightLinks={(<>
+                        <a href="#about">About</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#gallery">Gallery</a>
+                        <a href="#contact">Contact</a>
+                    </>)}
+                    shouldHideOnScroll={false}
+                />
+            </div>
+            }
+            
+        </div>
         <div className="header" id="header">
             <div className="container-body">
                 <div className="row header-name">
                     <h1 className="firstname">Jared</h1>
                     <h1 className="lastname">Rudnicki</h1>
                 </div>
-
-                
                 <div className="row header-nav">
                     <div className="col-3"><a href="#about">About</a></div>
                     <div className="col-3"><a href="#projects">Projects</a></div>
                     <div className="col-3"><a href="#gallery">Gallery</a></div>
                     <div className="col-3"><a href="#contact">Contact</a></div>
                 </div>
-
             </div>
         </div>
 
-        {navVisible && 
-        <div className="navbar-container">
-            <nav className="navbar navbar-expand-lg">
-                <a className="navbar-brand" href="#">Jared Rudnicki</a>
-                <button className="navbar-toggler" onClick={() => setToggle(!toggle)} type="button" data-toggle="collapse" data-target=".navbar-collapse " aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    {toggle ? <i class="fas fa-times"></i>: <i className="fas fa-bars"></i>}
-                        
-                </button>
-                <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav">
-                    <li className="nav-item active">
-                        <a className="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#gallery">Gallery</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#contact">Contact</a>
-                    </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-        }
 
         <div className="container-body">
             <div id="about">
