@@ -132,7 +132,7 @@ const Home = () => {
                 
                 <div className="jrivia row">
                     
-                    <a href="http://jrivia.herokuapp.com/" className="jrivia-title col" style={{backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.25)), url(${image_jrivia})`}}>
+                    <a href="http://jrivia.netlify.app/" className="jrivia-title col" style={{backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.25)), url(${image_jrivia})`}}>
                     <div style={{display:"flex"}}><i class="fas fa-link" style={{padding:"20px"}}></i><h2><pre>Jrivia      </pre> </h2></div>
                     </a>
                     
@@ -146,7 +146,7 @@ const Home = () => {
                         permissions to create and delete trivia questions. 
                         `}</p>
 
-                        <a href="https://github.com/jessiemmm/jrivia"><i class="fab fa-github"></i> github</a>
+                        <a href="https://github.com/jaredrudnicki/jrivia"><i class="fab fa-github"></i> github</a>
                     </div> 
                 </div>
                 
