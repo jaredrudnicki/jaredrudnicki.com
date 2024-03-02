@@ -1,3 +1,15 @@
+:root {
+    --cream-white:#F2F4F3;
+    --dark-gray: #212529;
+    --light-gray: #CFD4DA;
+    --black:  #0C0B0A;
+    --dark-blue: #00529C;
+    --light-blue: #176DB6;
+    --dark-yellow: #FAA31B;
+    --light-yellow: #FFF3C1;
+
+}
+
 .all {
     color: white;
     background-image: linear-gradient(to bottom left, #3E7CB1, #B175BD);
@@ -152,10 +164,11 @@ nav button {
 }
 
 #about .profile-card {
-    background-color: #3E7CB1;
+    padding: 10px;
+    background-color: #212529;
     border-radius: 20px 0px 20px 0px;
+    box-shadow: 6.4px 12.8px 12.8px var(--black);
 }
-
 .profile-photo {
     padding: 10px;
 }

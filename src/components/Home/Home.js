@@ -1,10 +1,10 @@
 import React from "react";
-import "./Home.css";
+import "./style.css";
 import {useState, useEffect} from 'react';
 import {Link} from "react-router-dom";
+import About from "../About"
 
 import image1 from "../../images/profile1.jpg"
-import image_profile_2 from "../../images/profile2.jpg"
 import image_jrivia from "../../images/jrivia.PNG"
 import image_gift_picker from "../../images/giftpicker.PNG"
 import gallery1 from "../../images/4_0157.png"
@@ -93,38 +93,8 @@ const Home = () => {
         }
 
         <div className="container-body">
-            <div id="about">
-                <br />
-                <h1>About</h1>
-                <p>{`I am currently a third year Computer Science student
-                with a concentration in Artificial Intelligence at Northeastern University. My primary
-                interest in lies at the intersection of design and development.
-                
-                Some languages and tools I love include Javascript (with React), HTML/CSS, Python, SQL, 
-                Figma, Postman.`}</p>
-                
-                <div className="row profile-card">
-                    <div className="col-lg-4 col-12" style={{marginTop: "20px"}}>
-                        <img className="profile-photo" src={image_profile_2} style={{verticalAlign: "middle", width: "200px", height: "200px", borderRadius: "50%", objectFit: "cover", display: "block", margin: "auto"}}/>
-                    </div>
-                    <div className="col-lg-8 col-12" style={{marginTop: "20px"}}>
-                        <ul>
-                            <li><h6>Place I call home:</h6> Atlanta, GA</li> <br />
-                            <li><h6>Tools I love:</h6> Javascript (with React), HTML/CSS, Python, SQL, Figma, Postman, Illustrator</li> <br />
-                            <li><h6>Tools I am learning:</h6> Flutter</li> <br />
-                            <li><h6>My Hobbies:</h6> Squash, Running, Reading, Cooking</li> <br />
-                        </ul>
-
-                        
-
-                        
-                    </div>
-                </div>
-                
-                <p style={{marginTop: "20px"}}>{`If you would like to reach out for any reason, if you want to chat or possibly 
-                offer me an interview, you can`} <a href="https://drive.google.com/file/d/1Z9GTBkdk_NcEuwKT5_kRnDDUoDl3pfNw/view?usp=sharing"> checkout my resume </a> or <a href="#contact">contact me.</a></p>
-            </div> 
-
+            
+            <About />
 
 
             <div id="projects">
