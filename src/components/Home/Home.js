@@ -99,6 +99,26 @@ const Home = () => {
 
             <div id="projects">
                 <h1>Projects</h1>
+
+                <div className="jrivia row">
+                    
+                    <a href="https://giftpicker.io/" className="jrivia-title col" style={{backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.25)), url(${image_gift_picker})`}}>
+                        <div style={{display:"flex"}}><i class="fas fa-link" style={{padding:"20px"}}></i><h2><pre>Gift Picker </pre></h2></div>
+                    </a>
+                    
+                    <div className="jrivia-description col">
+                        <h5>Tools: Typescript, React, HTML/CSS/SCSS</h5>
+                        <p>{`
+                        This is a project that I worked on in collaboration with TAMID tech consulting and Presently.
+                        My role as a developer resulted in the creation of a matching algorithm that generated an ordered 
+                        list of gifts determined by weighted features that is best suited for the identified individual.
+                        I also contributed to the logic that handled moving throught the questions, and the logic for 
+                        showing the results. Other contributions include small features and design changes.
+                        `}</p>
+                        
+                        <a href="https://github.com/getpresently/gift-picker"><i class="fab fa-github"></i> github</a>
+                    </div> 
+                </div>
                 
                 <div className="jrivia row">
                     
@@ -117,26 +137,6 @@ const Home = () => {
                         `}</p>
 
                         <a href="https://github.com/jaredrudnicki/jrivia"><i class="fab fa-github"></i> github</a>
-                    </div> 
-                </div>
-                
-                <div className="jrivia row">
-                    
-                    <a href="https://giftpicker.io/" className="jrivia-title col" style={{backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.25)), url(${image_gift_picker})`}}>
-                        <div style={{display:"flex"}}><i class="fas fa-link" style={{padding:"20px"}}></i><h2><pre>Gift Picker </pre></h2></div>
-                    </a>
-                    
-                    <div className="jrivia-description col">
-                        <h5>Tools: Typescript, React, HTML/CSS/SCSS</h5>
-                        <p>{`
-                        This is a project that I worked on in collaboration with TAMID tech consulting and Presently.
-                        My role as a developer resulted in the creation of a matching algorithm that generated an ordered 
-                        list of gifts determined by weighted features that is best suited for the identified individual.
-                        I also contributed to the logic that handled moving throught the questions, and the logic for 
-                        showing the results. Other contributions include small features and design changes.
-                        `}</p>
-                        
-                        <a href="https://github.com/getpresently/gift-picker"><i class="fab fa-github"></i> github</a>
                     </div> 
                 </div>
                 
