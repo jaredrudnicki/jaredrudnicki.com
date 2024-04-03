@@ -104,14 +104,14 @@ const Home = () => {
                 <div className="jrivia row">
                     
                     <a href="https://www.sundropdesign.co/" className="jrivia-title col" style={{backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.25)), url(${sundrop})`}}>
-                        <div style={{display:"flex"}}><i class="fas fa-link" style={{padding:"20px"}}></i><h2><pre>Sundrop Design Company </pre></h2></div>
+                        <div style={{display:"flex"}}><i class="fas fa-link" style={{padding:"20px"}}></i><h2><pre>Sundrop Design </pre></h2></div>
                     </a>
                     
                     <div className="jrivia-description col">
                         <h5>Tools: NextJS, ChakraUI, Illustrator, Figma</h5>
                         <p>{`
                         This is a design agency I co-founded with my partner, Jessica Chin. 
-                        The purpose is to build cohesive experiences, so that the brand and digital experiences have the same feel.
+                        The purpose is to build cohesive experiences, so that a company's brand and digital experiences have the same feel.
                         There is some additional design work shown on this site.
                         `}</p>
                         
