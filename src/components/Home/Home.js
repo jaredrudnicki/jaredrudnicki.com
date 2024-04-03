@@ -7,6 +7,7 @@ import About from "../About"
 import image1 from "../../images/profile1.jpg"
 import image_jrivia from "../../images/jrivia.PNG"
 import image_gift_picker from "../../images/giftpicker.PNG"
+import sundrop from "../../images/sundrop.png"
 import gallery1 from "../../images/4_0157.png"
 import gallery2 from "../../images/emerald_deck.png"
 import gallery3 from "../../images/CKlogo-white-03.png"
@@ -102,12 +103,29 @@ const Home = () => {
 
                 <div className="jrivia row">
                     
+                    <a href="https://www.sundropdesign.co/" className="jrivia-title col" style={{backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.25)), url(${sundrop})`}}>
+                        <div style={{display:"flex"}}><i class="fas fa-link" style={{padding:"20px"}}></i><h2><pre>Sundrop Design Company </pre></h2></div>
+                    </a>
+                    
+                    <div className="jrivia-description col">
+                        <h5>Tools: NextJS, ChakraUI, Illustrator, Figma</h5>
+                        <p>{`
+                        This is a design agency I co-founded with my partner, Jessica Chin. 
+                        The purpose is to build cohesive experiences, so that the brand and digital experiences have the same feel.
+                        There is some additional design work shown on this site.
+                        `}</p>
+                        
+                    </div> 
+                </div>
+
+                <div className="jrivia row">
+                    
                     <a href="https://giftpicker.io/" className="jrivia-title col" style={{backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.25)), url(${image_gift_picker})`}}>
                         <div style={{display:"flex"}}><i class="fas fa-link" style={{padding:"20px"}}></i><h2><pre>Gift Picker </pre></h2></div>
                     </a>
                     
                     <div className="jrivia-description col">
-                        <h5>Tools: Typescript, React, HTML/CSS/SCSS</h5>
+                        <h5>Tools: Typescript, React, Tailwind CSS</h5>
                         <p>{`
                         This is a project that I worked on in collaboration with TAMID tech consulting and Presently.
                         My role as a developer resulted in the creation of a matching algorithm that generated an ordered 
