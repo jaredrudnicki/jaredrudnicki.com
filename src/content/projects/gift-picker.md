@@ -1,4 +1,4 @@
-A gift recommendation tool built in collaboration with TAMID tech consulting and Presently.
+A gift recommendation tool I built with TAMID tech consulting and Presently. It reached #3 on [Product Hunt](https://www.producthunt.com/products/giftpicker-by-presently) when it launched.
 
 ## What I worked on
 
