@@ -1,9 +1,17 @@
 import sundrop from './projects/sundrop-design.md';
 import giftPicker from './projects/gift-picker.md';
 import jrivia from './projects/jrivia.md';
-import thisWebsite from './projects/this-website.md';
+import scute from './projects/scute.md';
 
 const PROJECTS = [
+    {
+        slug: 'scute',
+        name: 'Scute',
+        meta: 'iOS · Mapbox · Strava',
+        blurb: 'An in-progress iOS app built on Mapbox and Strava.',
+        links: [{ label: 'Visit site', href: 'https://www.scute.run/' }],
+        body: scute,
+    },
     {
         slug: 'gift-picker',
         name: 'Gift Picker',
@@ -12,6 +20,7 @@ const PROJECTS = [
         links: [
             { label: 'Visit site', href: 'https://giftpicker.io/' },
             { label: 'GitHub', href: 'https://github.com/getpresently/gift-picker' },
+            { label: 'Product Hunt', href: 'https://www.producthunt.com/products/giftpicker-by-presently' },
         ],
         body: giftPicker,
     },
@@ -33,14 +42,6 @@ const PROJECTS = [
         blurb: 'A small design studio side project.',
         links: [{ label: 'Visit site', href: 'https://www.sundropdesign.co/' }],
         body: sundrop,
-    },
-    {
-        slug: 'this-website',
-        name: 'This website',
-        meta: 'React · CSS',
-        blurb: 'My personal site, built around a single pixel-lamp motif.',
-        links: [{ label: 'GitHub', href: 'https://github.com/jaredrudnicki/jaredrudnicki.com' }],
-        body: thisWebsite,
     },
 ];
 
