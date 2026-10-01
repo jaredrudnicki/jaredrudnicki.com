@@ -37,14 +37,14 @@ const HomeV2 = () => {
                                 <span className="jr-name-mask" aria-hidden="true" />
                             </h1>
                             <p className="jr-bio">
-                                Currently building software where design and AI meet. Right now I'm at {' '}
+                                I build software where design and AI meet. I'm a software engineer at{' '}
                                 <a href="https://www.copley.com" target="_blank" rel="noreferrer">Copley</a>,
                                 a demand engineering platform.{' '}
                                 {CAL_LINK ? (
                                     <button type="button" className="jr-bio-more" onClick={openBooking} aria-expanded={booking}>
-                                        Lets chat!
+                                        Let's chat.
                                     </button>
-                                ) : 'Learn chat!'}
+                                ) : null}
                             </p>
                             <Socials />
                         </div>
