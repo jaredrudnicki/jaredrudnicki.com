@@ -1,9 +1,11 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { createContext, useEffect, useRef, useState } from 'react';
 import Footer from './Footer';
 import { Nav } from './Layout';
 import './Home/HomeV2.css';
 
 const THEME_KEY = 'jr-theme';
+
+export const ThemeContext = createContext('dark');
 
 function initialTheme() {
     try {
@@ -33,7 +35,7 @@ const Page = ({ children }) => {
             <div className="jr-top">
                 <Nav theme={theme} onToggleTheme={toggleTheme} />
             </div>
-            {children}
+            <ThemeContext.Provider value={theme}>{children}</ThemeContext.Provider>
             <Footer />
         </div>
     );

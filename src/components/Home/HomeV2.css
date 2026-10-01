@@ -272,6 +272,18 @@
 }
 .jr .jr-bio a:hover,
 .jr .jr-bio a:focus-visible { color: var(--accent); border-bottom-color: var(--accent); }
+.jr-bio-more {
+    padding: 0;
+    background: none;
+    border: 0;
+    border-bottom: 1px solid var(--line);
+    font: inherit;
+    color: var(--ink);
+    cursor: pointer;
+    transition: color var(--dur) var(--ease), border-color var(--dur) var(--ease);
+}
+.jr-bio-more:hover,
+.jr-bio-more:focus-visible { color: var(--accent); border-bottom-color: var(--accent); }
 
 /* Sections */
 .jr-section { padding: 120px var(--gutter) 0; scroll-margin-top: 24px; }
@@ -280,6 +292,47 @@
     align-items: center;
     gap: 18px;
     padding-bottom: 12px;
+}
+
+/* Booking: floats beside the intro on wide screens, stacks below it otherwise */
+.jr-hero-body { display: grid; grid-template-columns: minmax(0, 1fr); gap: 40px; align-items: start; }
+.jr-cal-panel {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    box-shadow: 0 30px 80px -30px oklch(0 0 0 / 0.55);
+    animation: jr-cal-in var(--dur) var(--ease) both;
+}
+.jr-cal-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px 10px 18px;
+    border-bottom: 1px solid var(--line);
+}
+.jr-cal-close {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    background: none;
+    border: 0;
+    font: inherit;
+    font-size: 20px;
+    line-height: 1;
+    color: var(--muted);
+    cursor: pointer;
+    transition: color var(--dur) var(--ease);
+}
+.jr-cal-close:hover,
+.jr-cal-close:focus-visible { color: var(--accent); }
+.jr-cal { width: 100%; height: 560px; overflow: auto; }
+@keyframes jr-cal-in {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: none; }
+}
+@media (min-width: 1100px) {
+    .jr-hero-body.has-cal { grid-template-columns: minmax(0, 1fr) minmax(0, 560px); gap: 56px; }
+    /* Lift the card so it hovers alongside the name rather than sitting on its baseline. */
+    .jr-cal-panel { margin-top: -24px; }
 }
 
 /* Pages (projects, writing index) */
@@ -528,5 +581,5 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .jr-name-text, .jr-name-mask, .jr-pixels canvas { animation-duration: 1ms; animation-delay: 0ms; }
+    .jr-name-text, .jr-name-mask, .jr-pixels canvas, .jr-cal-panel { animation-duration: 1ms; animation-delay: 0ms; }
 }
